@@ -1,0 +1,23 @@
+package com.example.practice.domain.post;
+
+
+import lombok.Getter;
+
+@Getter
+public class PostEntity {
+    private static Long AUTO_INCREMENT = 1L;
+
+    private Long id;
+    private String title;
+    private String content;
+    private String author;
+
+    public PostEntity(String title, String content, String author) {
+        this.id = AUTO_INCREMENT++;
+        this.title = title;
+        this.content = content;
+        this.author = author;
+    }
+}
+
+// 26분 35초
